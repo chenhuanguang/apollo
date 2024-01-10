@@ -126,7 +126,7 @@ bool PlanningComponent::Proc(
 
   // check and process possible rerouting request
   CheckRerouting();
-
+  AINFO << "Received prediction data: run planning callback.";
   // process fused input data
   local_view_.prediction_obstacles = prediction_obstacles;
   local_view_.chassis = chassis;
